@@ -1,0 +1,13 @@
+## Exploratory Data Analysis – Missing Values and Target Variable Distribution
+
+The dataset contains 2930 observations and 82 variables, including both numerical and categorical features. Initial inspection revealed the presence of missing values in multiple variables. However, further analysis showed that missing values in several columns are not due to data quality issues, but rather indicate the absence of specific features.
+
+For example, variables such as *Pool QC*, *Alley*, *Fence*, and *Fireplace Qu* exhibit a high proportion of missing values. Examination of their distributions using frequency counts demonstrated that missing values correspond to properties lacking these features (e.g., no pool, no alley access, no fence, or no fireplace). Therefore, these missing values carry meaningful information and should not be treated as random data loss.
+
+A similar pattern was observed for *Mas Vnr Type*, where missing values largely correspond to zero values in the related *Mas Vnr Area* variable, confirming consistency in the dataset.
+
+The target variable, *SalePrice*, was analyzed using a histogram with a kernel density estimate. The distribution is positively skewed (right-skewed), indicating that most properties are concentrated in the lower price range, while a smaller number of high-value properties create a long tail on the right side.
+
+Additionally, the distribution suggests the presence of multiple price segments within the housing market, as indicated by slight multimodality (multiple peaks). Although higher-priced properties are present, they do not appear to be extreme outliers but rather natural variations within the dataset.
+
+Overall, the dataset appears to be consistent and suitable for further analysis, with missing values providing additional information about property characteristics rather than indicating data quality issues.
