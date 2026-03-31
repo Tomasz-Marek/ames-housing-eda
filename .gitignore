@@ -1,0 +1,22 @@
+# virtual env
+.venv/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# jupyter
+.ipynb_checkpoints/
+
+# dane (duże pliki nie powinny iść na githuba)
+data/raw/*
+data/processed/*
+
+# ale zachowaj foldery
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# wykresy
+reports/figures/*
+!reports/figures/.gitkeep
